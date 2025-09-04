@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "yarn run test:jest",
-    "test:jest": "jest --ci --coverage",
+    "test:jest": "jest --ci --coverage --passWithNoTests",
     "formatjs-compile": "stripes translate compile"
   },
   "devDependencies": {
