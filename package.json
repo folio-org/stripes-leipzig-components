@@ -1,0 +1,41 @@
+{
+  "name": "@folio/stripes-leipzig-components",
+  "version": "1.0.0",
+  "description": "Shared components for leipzig modules",
+  "main": "index.js",
+  "repository": "folio-org/stripes-leipzig-components",
+  "license": "Apache-2.0",
+  "stripes": {
+    "actsAs": [],
+    "okapiInterfaces": {}
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "yarn run test:jest",
+    "test:jest": "jest --ci --coverage",
+    "formatjs-compile": "stripes translate compile"
+  },
+  "devDependencies": {
+    "@folio/eslint-config-stripes": "^8.0.0",
+    "@folio/jest-config-stripes": "^3.0.0",
+    "@folio/stripes": "^10.0.0",
+    "@folio/stripes-cli": "^4.0.0",
+    "@folio/stripes-components": "^13.0.0",
+    "@folio/stripes-core": "^11.0.0",
+    "@folio/stripes-smart-components": "^10.0.0",
+    "eslint-plugin-jest": "^24.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intl": "^7.1.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0"
+  },
+  "peerDependencies": {
+    "@folio/stripes": "^10.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intl": "^7.1.5"
+  }
+}

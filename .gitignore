@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+*.swo
+/node_modules/
+ModuleDescriptor.json
+yarn-error.log
+junit.xml
+/out/
+/artifacts/
+junit.xml
+/.vscode/
