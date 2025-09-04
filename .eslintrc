@@ -1,0 +1,19 @@
+{
+  "extends": "@folio/eslint-config-stripes",
+  "parser": "@babel/eslint-parser",
+  "plugins": [],
+  "root": true,
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "implicit-arrow-linebreak": "off",
+    "react/forbid-prop-types": [
+      // rule was removed from eslint-config-stripes in v8.0.0
+      "warn",
+      {
+        "forbid": ["any", "array"]
+      }
+    ]
+  }
+}
