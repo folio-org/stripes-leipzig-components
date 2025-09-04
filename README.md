@@ -15,6 +15,8 @@ These components are intended for use by [ui-erm-usage](https://github.com/folio
 
 ## Additional information
 
+Read the [Stripes Module Developer's Guide](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md).
+
 Other [modules](https://dev.folio.org/source-code/#client-side).
 
 Other FOLIO Developer documentation is at [dev.folio.org](dev.folio.org)
