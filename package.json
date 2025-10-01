@@ -26,7 +26,8 @@
     "eslint-plugin-jest": "^24.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intl": "^7.1.5"
+    "react-intl": "^7.1.5",
+    "react-router-dom": "^5.2.0"
   },
   "dependencies": {
     "lodash": "^4.17.4",
@@ -36,6 +37,7 @@
     "@folio/stripes": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intl": "^7.1.5"
+    "react-intl": "^7.1.5",
+    "react-router-dom": "^5.2.0"
   }
 }
