@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Shared components for leipzig modules",
   "main": "index.js",
+
   "repository": "folio-org/stripes-leipzig-components",
   "license": "Apache-2.0",
   "stripes": {
