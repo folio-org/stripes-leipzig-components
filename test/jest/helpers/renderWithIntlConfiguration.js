@@ -2,6 +2,7 @@ import { IntlProvider } from 'react-intl';
 
 import { render } from '@folio/jest-config-stripes/testing-library/react';
 import stripesComponentsTranslations from '@folio/stripes-components/translations/stripes-components/en';
+// eslint-disable-next-line max-len
 import stripesSmartComponentsTranslations from '@folio/stripes-smart-components/translations/stripes-smart-components/en';
 
 import localTranslations from '../../../translations/stripes-leipzig-components/en';
