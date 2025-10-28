@@ -4,5 +4,7 @@
   "monthpicker.monthSelection": "Month selection",
   "monthpicker.yearMonthInput": "Year and month input",
   "monthpicker.yearMonthSelection": "Calender: Year and month selection",
-  "monthpicker.yearSelection": "Year selection"
+  "monthpicker.yearSelection": "Year selection",
+
+  "editCard.delete.card": "Delete card"
 }
