@@ -13,6 +13,7 @@ import { EditCard } from '@folio/stripes-leipzig-components';
 Name | type | description | default | required
 --- | --- | --- | --- | ---
 `children` | node | The content inside the EditCard. | - | true
+`deleteButtonAriaLabel` | string | Text for aria-label when no tooltip available | Delete card | false
 `deleteButtonTooltipText` | string | Text displayed as tooltip for the delete button | '' | false
 `header` | string | Text displayed in the EditCard header | - | true
 `onDelete` | func | Function will be executed when the delete button is clicked. If not provided, no delete button will be visible | undefined | false
