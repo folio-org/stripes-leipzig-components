@@ -13,8 +13,9 @@ import { EditCard } from '@folio/stripes-leipzig-components';
 Name | type | description | default | required
 --- | --- | --- | --- | ---
 `children` | node | The content inside the EditCard. | - | true
-`deleteButtonTooltipText` | node | Text displayed as tooltip for the delete button | undefined | false
-`header` | node | Text displayed in the EditCard header | - | true
+`deleteButtonAriaLabel` | string | Text for aria-label when no tooltip available | Delete card | false
+`deleteButtonTooltipText` | string | Text displayed as tooltip for the delete button. If not provided or empty, no tooltip is rendered. | undefined | false
+`header` | string | Text displayed in the EditCard header | - | true
 `onDelete` | func | Function will be executed when the delete button is clicked. If not provided, no delete button will be visible | undefined | false
 
 
@@ -25,8 +26,8 @@ Name | type | description | default | required
     return fields.map((cards, index) => (
       <EditCard
         key={index}
-        deleteButtonTooltipText={<FormattedMessage id="card.remove" />}
-        header={<FormattedMessage id="card.title.singular" values={{ amount: index + 1 }} />}
+        deleteButtonTooltipText={intl.formatMessage({ id: 'card.remove'})}
+        header={intl.formatMessage({ id: 'card.title.singular', values={{ amount: index + 1 }}})}
         onDelete={() => fields.remove(index)}
       >
         <Field
