@@ -5,7 +5,7 @@ const config = require('@folio/jest-config-stripes');
 const esModules = [
   '@folio',
   'ky',
-  'uuid'
+  'uuid',
 ].join('|');
 
 module.exports = {
