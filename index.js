@@ -1,3 +1,6 @@
 export { default as EditCard } from './lib/EditCard';
 
-export * from './lib/hooks';
+export {
+  useOkapiKyMutation,
+  useOkapiKyQuery,
+} from './lib/hooks';
