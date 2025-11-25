@@ -15,6 +15,19 @@ Name | type | description | default | required
 `params` | object | URL search parameters (query string parameters). | - | false
 `options` | object | Additional useQuery options. | - | false
 
+## Return Value
+
+Returns a react-query `useQuery` result object with the following properties:
+
+Property | Type | Description
+--- | --- | ---
+`data` | any | The fetched data from the API
+`isLoading` | boolean | True if the query is currently fetching
+`isError` | boolean | True if the query encountered an error
+`error` | Error | The error object if `isError` is true
+`refetch` | function | Manually trigger a refetch
+
+For more see [useQuery documentation](https://tanstack.com/query/v3/docs/react/reference/useQuery).
 
 ## useOkapiKyQuery example
 
