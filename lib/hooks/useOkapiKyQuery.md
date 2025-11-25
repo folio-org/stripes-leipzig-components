@@ -15,6 +15,7 @@ Name | type | description | default | required
 `params` | object | URL search parameters (query string parameters). | - | false
 `options` | object | Additional useQuery options. | - | false
 
+
 ## Return Value
 
 Returns a react-query `useQuery` result object with the following properties:
@@ -29,12 +30,13 @@ Property | Type | Description
 
 For more see [useQuery documentation](https://tanstack.com/query/v3/docs/react/reference/useQuery).
 
+
 ## useOkapiKyQuery example
 
 ```
   import { useOkapiKyQuery } from '@folio/stripes-leipzig-components';
 
-  const { data: book, isLoading: isLoadingBook, isError } = useOkapiKyQuery({
+  const { data: book, isLoading: isLoadingBook, isError, error } = useOkapiKyQuery({
     queryKey: ['books', bookId],
     id: bookId,
     api: 'books',
