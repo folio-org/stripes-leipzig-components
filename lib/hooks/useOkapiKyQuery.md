@@ -2,7 +2,7 @@
 
 ## Usage
 
-A hook for fetching data using `useMutation` from `react-query`.
+A hook for fetching data from Okapi using `useOkapiKy` and `useQuery` from `react-query`.
 
 
 ## Props
