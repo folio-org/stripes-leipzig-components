@@ -3,7 +3,7 @@
 ## Usage
 
 A hook for Create, Update, and Delete operations on Okapi resources using `useOkapiKy` and `useMutation` from `react-query`.
-Returns an object with three methods: useCreate(), useUpdate(), useDelete().
+Returns an object with three hooks: useCreate(), useUpdate(), useDelete().
 
 
 ## Props
