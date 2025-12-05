@@ -34,7 +34,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "react-final-form": "^6.3.5"
   },
   "peerDependencies": {
     "@folio/stripes": "^10.0.0",
