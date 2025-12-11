@@ -3,6 +3,9 @@
 A helper component for rendering repeatable ([TextField](https://github.com/folio-org/stripes-components/tree/main/lib/TextField)) components using react-final-form-arrays.
 The first input can be marked required and custom validation function can be defined.
 
+![RepeatableTextField Screenshot](images/repeatableTextField.png)
+
+
 ## Props
 
 Name | type | description | default | required
