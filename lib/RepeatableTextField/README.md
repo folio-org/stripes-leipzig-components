@@ -1,6 +1,6 @@
-# RepeatableField
+# RepeatableTextField
 
-A helper component for rendering repeatable form inputs using react-final-form-arrays.
+A helper component for rendering repeatable ([TextField](https://github.com/folio-org/stripes-components/tree/main/lib/TextField)) components using react-final-form-arrays.
 The first input can be marked required and custom validation function can be defined.
 
 ## Props
@@ -13,31 +13,31 @@ Name | type | description | default | required
 `placeholder` | string | Placeholder text for each input | '' | false
 `fieldValidate` | func | Custom validation function applied to each field | () => {} | false
 
-## RepeatableField example with useFieldArray
+## RepeatableTextField example with useFieldArray
 
 ```js
 import { useFieldArray } from 'react-final-form-arrays';
-import { RepeatableField } from '@folio/stripes-leipzig-components';
+import { RepeatableTextField } from '@folio/stripes-leipzig-components';
 
 const initialValues = {
-  repeatableField: [''], // ensures first field is visible
+  repeatableTextField: [''], // ensures first field is visible
 };
 
-const { fields } = useFieldArray('repeatableField');
+const { fields } = useFieldArray('repeatableTextField');
 
-<RepeatableField
+<RepeatableTextField
   fields={fields}
   isFirstFieldRequired
 />
 ```
 
-## RepeatableField example with FieldArray
+## RepeatableTextField example with FieldArray
 
 FieldArray requires a name prop to define the field array in the form state.
 
 ```js
 import { FieldArray } from 'react-final-form';
-import { RepeatableField } from '@folio/stripes-leipzig-components';
+import { RepeatableTextField } from '@folio/stripes-leipzig-components';
 
 const ValidateUrl = value => {
   const urlRegex = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,})/;
@@ -48,9 +48,9 @@ const ValidateUrl = value => {
 
 <FieldArray
   ariaLabel="Repeatable field"
-  component={RepeatableField}
+  component={RepeatableTextField}
   fieldValidate={ValidateUrl}
-  name="repeatableField"
-  placeholder={intl.formatMessage({ id: 'ui-app.placeholder.repeatableField' })}
+  name="repeatableTextField"
+  placeholder={intl.formatMessage({ id: 'ui-app.placeholder.repeatableTextField' })}
 />
 ```
