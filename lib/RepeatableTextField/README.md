@@ -23,7 +23,7 @@ Name | type | description | default | required
 ```js
 import { RepeatableTextField } from '@folio/stripes-leipzig-components';
 
-const ValidateUrl = value => {
+const validateUrl = value => {
   const urlRegex = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,})/;
 
   if (!value || urlRegex.test(value)) return undefined;
@@ -32,7 +32,7 @@ const ValidateUrl = value => {
 
 <RepeatableTextField
   ariaLabel="Repeatable field"
-  fieldValidate={ValidateUrl}
+  fieldValidate={validateUrl}
   isFirstFieldRequired
   name="repeatableTextField"
   placeholder={intl.formatMessage({ id: 'ui-app.placeholder.repeatableTextField' })}
