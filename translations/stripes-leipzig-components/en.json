@@ -6,5 +6,8 @@
   "monthpicker.yearMonthSelection": "Calender: Year and month selection",
   "monthpicker.yearSelection": "Year selection",
 
+  "repeatableTextField.validateRequired": "Required!",
+  "repeatableTextField.buttonAdd": "+ Add",
+
   "editCard.delete.card": "Delete card"
 }
