@@ -1,0 +1,11 @@
+{
+    "errors.required": "Required",
+    "errors.dateInvalid": "Date invalid",
+    "monthpicker.monthSelection": "Month selection",
+    "monthpicker.yearMonthInput": "Year and month input",
+    "monthpicker.yearMonthSelection": "Calender: Year and month selection",
+    "monthpicker.yearSelection": "Seleção do ano",
+    "repeatableTextField.validateRequired": "Obrigatório!",
+    "repeatableTextField.buttonAdd": "+ Adicionar",
+    "editCard.delete.card": "Excluir cartão"
+}
