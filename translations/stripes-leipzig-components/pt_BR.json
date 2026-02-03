@@ -1,0 +1,11 @@
+{
+    "errors.required": "Obrigatório",
+    "errors.dateInvalid": "Data inválida",
+    "monthpicker.monthSelection": "Seleção de mês",
+    "monthpicker.yearMonthInput": "Entrada de ano e mês",
+    "monthpicker.yearMonthSelection": "Calendário: Seleção de ano e mês",
+    "monthpicker.yearSelection": "Seleção do ano",
+    "repeatableTextField.validateRequired": "Obrigatório!",
+    "repeatableTextField.buttonAdd": "+ Adicionar",
+    "editCard.delete.card": "Excluir cartão"
+}
