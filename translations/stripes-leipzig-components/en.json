@@ -2,6 +2,7 @@
   "monthpicker.errors.required": "Required",
   "monthpicker.errors.dateInvalid": "Date invalid",
   "monthpicker.monthSelection": "Month selection",
+  "monthpicker.selected": "selected",
   "monthpicker.yearMonthInput": "Year and month input",
   "monthpicker.yearMonthSelection": "Calendar: Year and month selection",
   "monthpicker.yearSelection": "Year selection",
