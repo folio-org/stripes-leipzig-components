@@ -12,14 +12,10 @@ import { Monthpicker } from '@folio/stripes-leipzig-components';
 ## Props
 Name | type | description | default | required
 --- | --- | --- | --- | ---
-`backendDateFormat` | string | Format for saving year and month. | 'yyyy-MM' | false
-  - Year: 4 digits (`yyyy`)
-  - Month: 2 digits (`MM`)
-`dateFormat` | string | Format for display year and month. | Intl.DateTimeFormat(intl.locale, { year: 'numeric', month: '2-digit' }) | false
-  - Year: 4 digits (`yyyy`)
-  - Month: 2 digits (`MM`)
+`backendDateFormat` | string | Format for saving year and month.<ul><li>Year: 4 digits (`yyyy`)</li><li>Month: 2 digits (`MM`)</li></ul> | 'yyyy-MM' | false
+`dateFormat` | string | Format for display year and month.<ul><li>Year: 4 digits (`yyyy`)</li><li>Month: 2 digits (`MM`)</li></ul> | Intl.DateTimeFormat(intl.locale, { year: 'numeric', month: '2-digit' }) | false
 `isRequired` | bool | If true, TextField (containing year and month) will be required | false | false
-`name`| string | Name of the field, required for form integration | true |
+`name`| string | Name of the field, required for form integration | "" | true |
 `textLabel` | string | Visible field label | "" | false
 
 
