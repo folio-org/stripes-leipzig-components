@@ -1,8 +1,10 @@
+@import "@folio/stripes-components/lib/variables.css";
+
 .calendar {
   position: relative;
-  background: #fff;
+  background: var(--bg);
   border-radius: var(--radius);
-  border: 1px solid #bcbcbc;
+  border: 1px solid var(--color-border-p2);
   padding: var(--gutter-static);
   box-shadow: var(--shadow);
   z-index: 9999;
