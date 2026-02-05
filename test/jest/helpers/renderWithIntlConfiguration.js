@@ -22,7 +22,7 @@ const translationSets = [
   },
 ];
 
-function renderWithIntlConfiguration(children, locale = 'en') {
+function renderWithIntlConfiguration(children, locale = 'en-US') {
   const allTranslations = {};
 
   translationSets.forEach((set) => {
