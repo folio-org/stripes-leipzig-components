@@ -11,7 +11,8 @@ This software is distributed under the terms of the Apache License, Version 2.0.
 
 This is a library of React components and utility functions for use with the [Stripes UI toolkit](https://github.com/folio-org/stripes-core/), part of the [FOLIO project](https://www.folio.org/).
 
-These components are intended for use by [ui-erm-usage](https://github.com/folio-org/ui-erm-usage), [ui-finc-config](https://github.com/folio-org/ui-finc-config), [ui-finc-select](https://github.com/folio-org/ui-finc-select), [ui-idm-connect](https://github.com/folio-org/ui-idm-connect).
+The components and utility functions can be integrated into all Folio UI apps.
+The library was developed by team Leipzig, and the components are therefore mainly used in UI apps maintained by team Leipzig ([ui-erm-usage](https://github.com/folio-org/ui-erm-usage), [ui-finc-config](https://github.com/folio-org/ui-finc-config), [ui-finc-select](https://github.com/folio-org/ui-finc-select), [ui-idm-connect](https://github.com/folio-org/ui-idm-connect))
 
 ## Additional information
 
