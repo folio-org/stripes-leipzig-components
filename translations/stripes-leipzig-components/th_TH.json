@@ -1,11 +1,12 @@
 {
-    "errors.required": "Required",
-    "errors.dateInvalid": "Date invalid",
-    "monthpicker.monthSelection": "Month selection",
-    "monthpicker.yearMonthInput": "Year and month input",
-    "monthpicker.yearMonthSelection": "Calender: Year and month selection",
-    "monthpicker.yearSelection": "Year selection",
-    "repeatableTextField.validateRequired": "Required!",
-    "repeatableTextField.buttonAdd": "+ Add",
-    "editCard.delete.card": "Delete card"
+    "monthpicker.monthSelection": "เลือกเดือน",
+    "monthpicker.yearMonthInput": "ป้อนปีและเดือน",
+    "monthpicker.yearMonthSelection": "ปฏิทิน: เลือกปีและเดือน",
+    "monthpicker.yearSelection": "เลือกปี",
+    "repeatableTextField.validateRequired": "จำเป็น!",
+    "repeatableTextField.buttonAdd": "+ เพิ่ม",
+    "editCard.delete.card": "ลบบัตร",
+    "monthpicker.errors.required": "จำเป็น",
+    "monthpicker.errors.dateInvalid": "วันที่ไม่ถูกต้อง",
+    "monthpicker.selected": "เลือก"
 }

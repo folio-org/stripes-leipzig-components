@@ -1,11 +1,12 @@
 {
-    "errors.required": "Required",
-    "errors.dateInvalid": "Date invalid",
-    "monthpicker.monthSelection": "Month selection",
-    "monthpicker.yearMonthInput": "Year and month input",
-    "monthpicker.yearMonthSelection": "Calender: Year and month selection",
-    "monthpicker.yearSelection": "Year selection",
+    "monthpicker.monthSelection": "Monatsauswahl",
+    "monthpicker.yearMonthInput": "Eingabe von Jahr und Monat",
+    "monthpicker.yearMonthSelection": "Kalender: Auswahl von Jahr und Monat",
+    "monthpicker.yearSelection": "Jahresauswahl",
     "repeatableTextField.validateRequired": "Required!",
     "repeatableTextField.buttonAdd": "+ Add",
-    "editCard.delete.card": "Delete card"
+    "editCard.delete.card": "Delete card",
+    "monthpicker.errors.required": "Erforderlich",
+    "monthpicker.errors.dateInvalid": "Datum ungültig",
+    "monthpicker.selected": "ausgewählt"
 }

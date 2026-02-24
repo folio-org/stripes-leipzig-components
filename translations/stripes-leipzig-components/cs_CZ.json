@@ -1,11 +1,12 @@
 {
-    "errors.required": "Required",
-    "errors.dateInvalid": "Date invalid",
-    "monthpicker.monthSelection": "Month selection",
-    "monthpicker.yearMonthInput": "Year and month input",
-    "monthpicker.yearMonthSelection": "Calender: Year and month selection",
-    "monthpicker.yearSelection": "Year selection",
-    "repeatableTextField.validateRequired": "Required!",
-    "repeatableTextField.buttonAdd": "+ Add",
-    "editCard.delete.card": "Delete card"
+    "monthpicker.monthSelection": "Výběr měsíce",
+    "monthpicker.yearMonthInput": "Zadání roku a měsíce",
+    "monthpicker.yearMonthSelection": "Kalendář: Výběr roku a měsíce",
+    "monthpicker.yearSelection": "Výběr roku",
+    "repeatableTextField.validateRequired": "Povinné!",
+    "repeatableTextField.buttonAdd": "+ Přidat",
+    "editCard.delete.card": "Smazat kartu",
+    "monthpicker.errors.required": "Povinné",
+    "monthpicker.errors.dateInvalid": "Neplatné datum",
+    "monthpicker.selected": "vybráno"
 }
