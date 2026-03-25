@@ -17,7 +17,7 @@ if (!hasPerms) return <NoPermissionMessage />;
 
 Name | type | description | default | options | required
 --- | --- | --- | --- | --- | ---
-`message` | string | The text shown in the paragraph | stripes-smart-components.permissionsDoNotAllowAccess (translated) | - | false
+`message` | node | The text shown in the paragraph. Accepts a string or a React node (e.g. `<FormattedMessage />`). | stripes-smart-components.permissionsDoNotAllowAccess (translated) | - | false
 `type` | string | Sets the style of the `MessageBanner` | `warning` | `default`, `error`, `success`, `warning` | false
 
 ## Example

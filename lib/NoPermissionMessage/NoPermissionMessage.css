@@ -1,11 +1,4 @@
 .messageContainer {
   margin: 0.5rem auto;
-  max-width: 600px;
-}
-
-.messageContent {
-  text-align: center;
-}
-.messageContent h2:first-child {
-  margin-top: 0;
+  max-width: 540px;
 }
