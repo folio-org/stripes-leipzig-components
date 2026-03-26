@@ -1,7 +1,7 @@
 # NoPermissionMessage
 
 Displays a `MessageBanner` when the user is missing required permissions to access a page or feature.
-It is showing the translations of `stripes-smart-components` "Permission error" as a headline and "Sorry - your permissions do not allow access to this page." as a paragraph.
+It shows the `stripes-smart-components.permissionError` translation as a headline and `stripes-smart-components.permissionsDoNotAllowAccess` as a paragraph.
 
 ![NoPermissionMessage Screenshot](images/noPermissionMessage.png)
 
@@ -17,7 +17,8 @@ if (!hasPerms) return <NoPermissionMessage />;
 
 Name | type | description | default | options | required
 --- | --- | --- | --- | --- | ---
-`message` | node | The text shown in the paragraph. Accepts a string or a React node (e.g. `<FormattedMessage />`). | stripes-smart-components.permissionsDoNotAllowAccess (translated) | - | false
+`className` | string | Adds a custom class name for the `MessageBanner` | Centers the banner horizontally with limited width | - | false
+`message` | node | The text shown in the paragraph. Accepts a string or a React node (e.g. `<FormattedMessage />`). | `<FormattedMessage id="stripes-smart-components.permissionsDoNotAllowAccess" />` | - | false
 `type` | string | Sets the style of the `MessageBanner` | `warning` | `default`, `error`, `success`, `warning` | false
 
 ## Example
@@ -25,7 +26,8 @@ Name | type | description | default | options | required
 ```js
 if (!hasPerms) return (
   <NoPermissionMessage
-    message="You do not have the necessary permissions to use number generator sequences. Please contact your system administrator."
+    className={css.customStyling}
+    message="You do not have the necessary permissions to view this page. Please contact your system administrator."
     type="default"
   />
 );

@@ -1,4 +1,5 @@
-.messageContainer {
+.messageStyling {
   margin: 0.5rem auto;
   max-width: 540px;
+  text-align: center;
 }
