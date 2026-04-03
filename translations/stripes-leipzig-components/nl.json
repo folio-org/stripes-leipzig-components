@@ -1,12 +1,12 @@
 {
-    "monthpicker.monthSelection": "Month selection",
-    "monthpicker.yearMonthInput": "Year and month input",
-    "monthpicker.yearMonthSelection": "Calendar: Year and month selection",
-    "monthpicker.yearSelection": "Year selection",
-    "repeatableTextField.validateRequired": "Required!",
-    "repeatableTextField.buttonAdd": "+ Add",
-    "editCard.delete.card": "Delete card",
-    "monthpicker.errors.required": "Required",
-    "monthpicker.errors.dateInvalid": "Date invalid",
-    "monthpicker.selected": "selected"
+    "monthpicker.monthSelection": "Maand selecteren",
+    "monthpicker.yearMonthInput": "Jaar en maand invoer",
+    "monthpicker.yearMonthSelection": "Kalender: Selectie van jaar en maand",
+    "monthpicker.yearSelection": "Jaar selecteren",
+    "repeatableTextField.validateRequired": "Vereist!",
+    "repeatableTextField.buttonAdd": "+ Toevoegen",
+    "editCard.delete.card": "Kaart verwijderen",
+    "monthpicker.errors.required": "Vereist",
+    "monthpicker.errors.dateInvalid": "Datum ongeldig",
+    "monthpicker.selected": "geselecteerd"
 }
