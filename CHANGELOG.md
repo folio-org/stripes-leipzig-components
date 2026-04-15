@@ -1,6 +1,6 @@
 # Change history for stripes-leipzig-components
 
-## [1.1.0] (IN PROGRESS)
+## IN PROGRESS
 
 
 ## [1.0.0](https://github.com/folio-org/stripes-leipzig-components/tree/v1.0.0) (2026-04-15)
