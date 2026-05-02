@@ -1,12 +1,12 @@
 {
-    "monthpicker.monthSelection": "Month selection",
-    "monthpicker.yearMonthInput": "Year and month input",
-    "monthpicker.yearMonthSelection": "Calendar: Year and month selection",
-    "monthpicker.yearSelection": "Year selection",
-    "repeatableTextField.validateRequired": "Required!",
-    "repeatableTextField.buttonAdd": "+ Add",
-    "editCard.delete.card": "Delete card",
-    "monthpicker.errors.required": "Required",
-    "monthpicker.errors.dateInvalid": "Date invalid",
-    "monthpicker.selected": "selected"
+    "monthpicker.monthSelection": "月份选择",
+    "monthpicker.yearMonthInput": "年份和月份输入",
+    "monthpicker.yearMonthSelection": "日历：年份和月份选择",
+    "monthpicker.yearSelection": "年份选择",
+    "repeatableTextField.validateRequired": "必填！",
+    "repeatableTextField.buttonAdd": "+ 添加",
+    "editCard.delete.card": "删除卡片",
+    "monthpicker.errors.required": "必备",
+    "monthpicker.errors.dateInvalid": "日期无效",
+    "monthpicker.selected": "已选"
 }

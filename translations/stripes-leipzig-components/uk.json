@@ -1,12 +1,12 @@
 {
-    "monthpicker.monthSelection": "Month selection",
-    "monthpicker.yearMonthInput": "Year and month input",
-    "monthpicker.yearMonthSelection": "Calendar: Year and month selection",
-    "monthpicker.yearSelection": "Year selection",
-    "repeatableTextField.validateRequired": "Required!",
-    "repeatableTextField.buttonAdd": "+ Add",
+    "monthpicker.monthSelection": "Вибір місяця",
+    "monthpicker.yearMonthInput": "Введення року та місяця",
+    "monthpicker.yearMonthSelection": "Календар: вибір року та місяця",
+    "monthpicker.yearSelection": "Вибір року",
+    "repeatableTextField.validateRequired": "Обов'язково!",
+    "repeatableTextField.buttonAdd": "+ Додати",
     "editCard.delete.card": "Видалити картку",
-    "monthpicker.errors.required": "Required",
-    "monthpicker.errors.dateInvalid": "Date invalid",
-    "monthpicker.selected": "selected"
+    "monthpicker.errors.required": "Обов'язково",
+    "monthpicker.errors.dateInvalid": "Дата недійсна",
+    "monthpicker.selected": "вибрано"
 }

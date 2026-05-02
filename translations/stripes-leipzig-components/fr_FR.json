@@ -3,10 +3,10 @@
     "monthpicker.yearMonthInput": "Year and month input",
     "monthpicker.yearMonthSelection": "Calendar: Year and month selection",
     "monthpicker.yearSelection": "Year selection",
-    "repeatableTextField.validateRequired": "Required!",
-    "repeatableTextField.buttonAdd": "+ Add",
+    "repeatableTextField.validateRequired": "Obligatoire !",
+    "repeatableTextField.buttonAdd": "+ Ajouter",
     "editCard.delete.card": "Delete card",
-    "monthpicker.errors.required": "Required",
-    "monthpicker.errors.dateInvalid": "Date invalid",
+    "monthpicker.errors.required": "Obligatoire",
+    "monthpicker.errors.dateInvalid": "Date invalide",
     "monthpicker.selected": "selected"
 }
