@@ -1,7 +1,7 @@
 # Change history for stripes-leipzig-components
 
 ## IN PROGRESS
-
+* Create component CheckboxFilterAccordion ([UIFC-494](https://folio-org.atlassian.net/browse/UIFC-494))
 
 ## [1.0.0](https://github.com/folio-org/stripes-leipzig-components/tree/v1.0.0) (2026-04-15)
 * Add basic files and structure
