@@ -2,6 +2,7 @@
 
 ## IN PROGRESS
 * Create component CheckboxFilterAccordion ([UIFC-494](https://folio-org.atlassian.net/browse/UIFC-494))
+* Create component DynamicSelectionFilterAccordion ([UIFC-498](https://folio-org.atlassian.net/browse/UIFC-498))
 
 ## [1.0.0](https://github.com/folio-org/stripes-leipzig-components/tree/v1.0.0) (2026-04-15)
 * Add basic files and structure
