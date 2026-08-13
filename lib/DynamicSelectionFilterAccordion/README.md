@@ -19,7 +19,7 @@ import { DynamicSelectionFilterAccordion } from '@folio/stripes-leipzig-componen
 Name | type | description | default | required
 --- | --- | --- | --- | ---
 `activeFilters` | object | All active filters of the search pane, keyed by filter group. | `{}` | false
-`dataOptions` | array | The options of this filter group, each `{ label, value }`. The label has to be a string. | `[]` | true
+`dataOptions` | array | The options of this filter group, each `{ label, value }`. The label has to be a string. | `[]` | false
 `filterHandlers` | object | The filter handlers of `SearchAndSortQuery`; `clearGroup` and `state` are used. | - | true
 `filterKey` | string | Name of the filter group, e.g. `contact`. Also builds the accordion id `filter-accordion-${filterKey}` and the selection id `${filterKey}-filter`. | - | true
 `label` | node | Label of the accordion, already translated. | - | true
