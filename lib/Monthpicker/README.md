@@ -1,4 +1,7 @@
 # Monthpicker
+
+![Monthpicker Screenshot](images/monthpicker.png)
+
 ## Usage
 
 ```js
