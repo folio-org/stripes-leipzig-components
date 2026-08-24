@@ -1,4 +1,7 @@
 # EditCard
+
+![EditCard Screenshot](images/editCard.png)
+
 ## Usage
 
 ```js
