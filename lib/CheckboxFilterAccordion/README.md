@@ -2,7 +2,7 @@
 
 A checkbox filter group for search panes: renders an [Accordion](https://github.com/folio-org/stripes-components/tree/main/lib/Accordion) together with a [CheckboxFilter](https://github.com/folio-org/stripes-smart-components/tree/main/lib/SearchAndSort/components/CheckboxFilter) and wires both to the `activeFilters` and `filterHandlers` of `SearchAndSortQuery`. The accordion shows a clear button as soon as the group has an active filter.
 
-![CheckboxFilterAccordion Screenshot](images/CheckboxFilterAccordion.png)
+![CheckboxFilterAccordion Screenshot](images/checkboxFilterAccordion.png)
 
 ## Usage
 

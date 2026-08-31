@@ -4,7 +4,7 @@ A single-select filter group for search panes, meant for filter values that are 
 
 The filter group is stored as an array like all other filter groups, but only ever holds the one selected value.
 
-![DynamicSelectionFilterAccordion Screenshot](images/DynamicSelectionFilterAccordion.png)
+![DynamicSelectionFilterAccordion Screenshot](images/dynamicSelectionFilterAccordion.png)
 
 ## Usage
 
