@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM"],
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "strict": true,
+    // our own declarations are .d.ts files, so they would be skipped as well
+    "skipLibCheck": false,
+    "types": []
+  },
+  "include": ["index.d.ts", "lib/**/*.d.ts", "test/types/**/*"]
+}

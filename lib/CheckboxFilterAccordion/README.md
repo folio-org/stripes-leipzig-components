@@ -62,3 +62,17 @@ All further props are passed on to the underlying `Accordion`, e.g. `closedByDef
   </SearchAndSortQuery>
 
 ```
+
+## TypeScript
+
+The component ships type declarations in `CheckboxFilterAccordion.d.ts`, so it can be used from TypeScript modules without further setup.
+
+```ts
+import {
+  CheckboxFilterAccordion,
+  CheckboxFilterAccordionProps,
+} from '@folio/stripes-leipzig-components';
+```
+
+The value type of the filter (`string` by default) is inferred from `activeFilters` and `filterHandlers`; pass it explicitly for numeric filter values, e.g. `<CheckboxFilterAccordion<number> ... />`.
+When the filters live in their own component, `activeFilters` and `filterHandlers` are usually passed down as props that are already unwrapped.

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Shared components for leipzig modules",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": "folio-org/stripes-leipzig-components",
   "license": "Apache-2.0",
   "stripes": {
@@ -10,10 +11,11 @@
     "okapiInterfaces": {}
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . && yarn typecheck",
     "test": "yarn run test:jest",
     "test:jest": "jest --ci --coverage --passWithNoTests",
-    "formatjs-compile": "stripes translate compile"
+    "formatjs-compile": "stripes translate compile",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@folio/eslint-config-stripes": "^8.0.0",
@@ -23,6 +25,8 @@
     "@folio/stripes-components": "^13.0.0",
     "@folio/stripes-core": "^11.0.0",
     "@folio/stripes-smart-components": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "eslint-plugin-canonical": "^4.0.0",
     "eslint-plugin-jest-dom": "^4.0.0",
     "eslint-plugin-testing-library": "^6.0.0",
@@ -30,7 +34,8 @@
     "react-dom": "^18.2.0",
     "react-intl": "^7.1.5",
     "react-query": "^3.9.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "final-form-arrays": "^3.0.2",
