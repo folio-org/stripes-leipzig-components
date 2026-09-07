@@ -8,8 +8,9 @@
     "noEmit": true,
     "noImplicitAny": true,
     "strict": true,
-    // our own declarations are .d.ts files, so they would be skipped as well
-    "skipLibCheck": false,
+    // this skips our own declarations as well, but checking every .d.ts of every
+    // dependency makes the result depend on the install topology -- see README
+    "skipLibCheck": true,
     "types": []
   },
   "include": ["index.d.ts", "lib/**/*.d.ts", "test/types/**/*"]

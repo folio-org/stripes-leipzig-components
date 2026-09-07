@@ -37,6 +37,20 @@ the value type of a filter from being narrowed to a string literal by its `dataO
 Run `yarn typecheck` to check the declarations. The compile-time tests under `test/types/`
 are never executed; `tsc` is the assertion.
 
+Those tests are what actually catches a wrong declaration. `skipLibCheck` is on, so `tsc` does
+not verify `.d.ts` files themselves -- neither the ones of the dependencies nor ours. It is on
+because the alternative type checks every `.d.ts` of every dependency, which makes the result
+depend on how the module was installed: it fails in a standalone checkout while passing in the
+Yarn workspace.
+
+Errors therefore have to surface where the components are *used*, and `test/types/` covers both
+directions. The positive cases catch a declaration that no longer describes the component. The
+negative cases -- the `@ts-expect-error` lines -- catch a declaration that silently degrades to
+`any`, which is what a broken import inside a `.d.ts` does while `skipLibCheck` is on: the
+expected error disappears and TypeScript reports the unused directive instead. Note that
+`@ts-expect-error` only applies to the line directly below it, so for multi-line JSX the comment
+has to sit right above the opening tag.
+
 ## Additional information
 
 Read the [Stripes Module Developer's Guide](https://github.com/folio-org/stripes/blob/master/doc/dev-guide.md).

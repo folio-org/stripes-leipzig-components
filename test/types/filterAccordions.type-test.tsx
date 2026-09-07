@@ -92,3 +92,21 @@ export const NodeLabels = () => (
 
 /** The prop types are exported for consumers that wrap the components */
 export type WrapperProps = CheckboxFilterAccordionProps & DynamicSelectionFilterAccordionProps;
+
+/*
+ * Negative cases: each line must stay an error. If a declaration silently degrades to `any`
+ * -- which is what a broken import inside a .d.ts does while `skipLibCheck` is on -- the error
+ * disappears and TypeScript reports the unused directive instead.
+ */
+// @ts-expect-error unknown props are rejected
+export const Unknown = () => <CheckboxFilterAccordion filterHandlers={filterHandlers} filterKey="s" label="l" nope />;
+// @ts-expect-error filterHandlers is required
+export const MissingHandlers = () => <CheckboxFilterAccordion filterKey="s" label="l" />;
+// @ts-expect-error filterKey is required
+export const MissingKey = () => <CheckboxFilterAccordion filterHandlers={filterHandlers} label="l" />;
+export const WithChildren = () => (
+  // @ts-expect-error children are supplied by the component
+  <CheckboxFilterAccordion filterHandlers={filterHandlers} filterKey="s" label="l">
+    <i>nope</i>
+  </CheckboxFilterAccordion>
+);
