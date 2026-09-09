@@ -6,10 +6,7 @@
     "module": "ES2022",
     "moduleResolution": "bundler",
     "noEmit": true,
-    "noImplicitAny": true,
     "strict": true,
-    // this skips our own declarations as well, but checking every .d.ts of every
-    // dependency makes the result depend on the install topology -- see README
     "skipLibCheck": true,
     "types": []
   },

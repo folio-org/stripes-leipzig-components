@@ -10,6 +10,11 @@ const esModules = [
 
 module.exports = {
   ...config,
+  collectCoverageFrom: [
+    ...config.collectCoverageFrom,
+    // declaration files contain no executable code; they would only add empty rows
+    '!**/*.d.ts',
+  ],
   setupFiles: [
     ...config.setupFiles,
     path.join(__dirname, './test/jest/setupFiles.js'),
