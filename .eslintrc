@@ -90,6 +90,17 @@
     ],
     "testing-library/prefer-user-event": "warn"
   },
+  "overrides": [
+    {
+      // TypeScript setup comes from @folio/eslint-config-stripes. Only the parser has to be
+      // repeated here: the shared config sets it in its own *.ts override, but our top-level
+      // "parser" above comes later in the chain and wins. .ts files would then be parsed by
+      // Babel -- which handles the syntax, but produces an AST the @typescript-eslint rules
+      // cannot walk, so they crash instead of reporting.
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
   "settings": {
     "react": {
       "version": "detect"

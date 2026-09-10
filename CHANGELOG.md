@@ -4,6 +4,7 @@
 * Create component CheckboxFilterAccordion ([UIFC-494](https://folio-org.atlassian.net/browse/UIFC-494))
 * Add screenshots to the EditCard and Monthpicker docs ([UIFC-507](https://folio-org.atlassian.net/browse/UIFC-507))
 * Create component DynamicSelectionFilterAccordion ([UIFC-498](https://folio-org.atlassian.net/browse/UIFC-498))
+* Add type declaration for DynamicSelectionFilterAccordion and CheckboxFilterAccordion ([UIFC-508](https://folio-org.atlassian.net/browse/UIFC-508))
 
 ## [1.0.0](https://github.com/folio-org/stripes-leipzig-components/tree/v1.0.0) (2026-04-15)
 * Add basic files and structure
