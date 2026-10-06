@@ -1,6 +1,6 @@
 # Change history for stripes-leipzig-components
 
-## IN PROGRESS
+## 1.1.0 IN PROGRESS
 * Create component CheckboxFilterAccordion ([UIFC-494](https://folio-org.atlassian.net/browse/UIFC-494))
 * Add screenshots to the EditCard and Monthpicker docs ([UIFC-507](https://folio-org.atlassian.net/browse/UIFC-507))
 * Create component DynamicSelectionFilterAccordion ([UIFC-498](https://folio-org.atlassian.net/browse/UIFC-498))
