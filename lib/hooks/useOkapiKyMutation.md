@@ -37,7 +37,7 @@ Property | Type | Description
 --- | --- | ---
 `mutate` | function | Triggers the mutation
 `mutateAsync` | function | Triggers the mutation and returns a Promise
-`data` | any | `useCreate`: parsed JSON response; `useUpdate`/`useDelete`: null
+`data` | any | `useCreate`: parsed JSON response or `null` if response has no body; `useUpdate`/`useDelete`: null
 `isLoading` | boolean | True while the mutation is running
 `isError` | boolean | True when the mutation has failed
 `error` | Error | Error object when `isError` is true
