@@ -6,6 +6,20 @@ A hook for Create, Update, and Delete operations on Okapi resources using `useOk
 Returns an object with three hooks: useCreate(), useUpdate(), useDelete().
 
 
+### When to use
+
+`useOkapiKyMutation` is meant for **JSON resources** in the usual FOLIO CRUD style:
+
+Hook | Request | Expected response
+--- | --- | ---
+`useCreate` | `POST api` | JSON or no body
+`useUpdate` | `PUT api/id` | no body
+`useDelete` | `DELETE api/id`, or `DELETE api` with `withoutId: true` for a resource without id | no body
+
+### When not to use
+
+For anything else (e.g. responses that are not JSON, requests that trigger an action), use `useOkapiKy` from `@folio/stripes/core` with `react-query` directly.
+
 ## Props
 
 Name | type | description | default | required

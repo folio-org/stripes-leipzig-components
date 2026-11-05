@@ -5,6 +5,14 @@
 A hook for fetching data from Okapi using `useOkapiKy` and `useQuery` from `react-query`.
 
 
+### When to use
+
+`useOkapiKyQuery` is meant for reading **JSON resources** in the usual FOLIO style: `GET api` or `GET api/id`.
+
+### When not to use
+
+For anything else (e.g. responses that are not JSON, requests that trigger an action), use `useOkapiKy` from `@folio/stripes/core` with `react-query` directly.
+
 ## Props
 
 Name | type | description | default | required
