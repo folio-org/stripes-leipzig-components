@@ -6,12 +6,26 @@ A hook for Create, Update, and Delete operations on Okapi resources using `useOk
 Returns an object with three hooks: useCreate(), useUpdate(), useDelete().
 
 
+### When to use
+
+`useOkapiKyMutation` is meant for **JSON resources** in the usual FOLIO CRUD style:
+
+Hook | Request | Expected response
+--- | --- | ---
+`useCreate` | `POST api` | JSON or no body
+`useUpdate` | `PUT api/id` | no body
+`useDelete` | `DELETE api/id`, or `DELETE api` with `withoutId: true` for a resource without id | no body
+
+### When not to use
+
+For anything else (e.g. responses that are not JSON, requests that trigger an action), use `useOkapiKy` from `@folio/stripes/core` with `react-query` directly.
+
 ## Props
 
 Name | type | description | default | required
 --- | --- | --- | --- | ---
 `mutationKey` | string, array | Unique key for the mutation. | - | false
-`id` | string | Resource ID. Required for PUT and DELETE. | - | conditional
+`id` | string | Resource ID. Required for PUT and DELETE (unless `useDelete` is called with `withoutId: true`). | - | conditional
 `api` | string | Base API endpoint.  | - | true
 `options` | object | Additional useMutation options. | - | false
 
@@ -28,6 +42,8 @@ Name | Type | Description | Required
 `onSettled` | function | Callback fired on completion (success or error) | false
 `onMutate` | function | Callback fired before mutation | false
 `retry` | boolean/number | Retry failed mutations (default: `false`) | false
+`withoutId` | boolean | `useDelete` only: allows DELETE without an `id`, the resource at `api` itself is deleted (default: `false`) | false
+`kyOptions` | object, function | Additional [ky options](https://github.com/sindresorhus/ky/tree/v0.23.0#options), e.g. `headers` or `timeout`. Can be a function of the mutation variables. A `body` (e.g. a file) is sent instead of the JSON payload. | false
 
 For more see [useMutation documentation](https://tanstack.com/query/v3/docs/react/reference/useMutation).
 
@@ -122,4 +138,35 @@ For more see [useMutation documentation](https://tanstack.com/query/v3/docs/reac
     />
   );
 
+```
+
+## useOkapiKyMutation example Deleting a resource without id
+
+```
+  import { useOkapiKyMutation } from '@folio/stripes-leipzig-components';
+
+  // DELETE /settings/config
+  const { useDelete } = useOkapiKyMutation({ api: 'settings/config' });
+
+  const { mutateAsync: deleteConfig } = useDelete({ withoutId: true });
+```
+
+
+## useOkapiKyMutation example Uploading a file (kyOptions)
+
+```
+  import { useOkapiKyMutation } from '@folio/stripes-leipzig-components';
+
+  const { useCreate } = useOkapiKyMutation({ api: `reports/upload/${providerId}` });
+
+  // sends the FormData as body and ?overwrite=… as query, without the default timeout
+  const { mutateAsync: uploadReport } = useCreate({
+    kyOptions: ({ formData, overwrite }) => ({
+      body: formData,
+      searchParams: { overwrite },
+      timeout: false,
+    }),
+  });
+
+  uploadReport({ formData, overwrite: true });
 ```
