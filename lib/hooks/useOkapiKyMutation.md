@@ -28,6 +28,7 @@ Name | type | description | default | required
 `id` | string | Resource ID. Required for PUT and DELETE (unless `useDelete` is called with `withoutId: true`). | - | conditional
 `api` | string | Base API endpoint.  | - | true
 `options` | object | Additional useMutation options. | - | false
+`errorHandling` | boolean | 	Enables or disables automatic error handling. When enabled, an error callout is displayed if the query fails. | true | false
 
 ## Return Value
 
@@ -69,6 +70,7 @@ For more see [useMutation documentation](https://tanstack.com/query/v3/docs/reac
   const { useCreate } = useOkapiKyMutation({
     mutationKey: 'books',
     api: '/books',
+    errorHandling: false,
   });
 
   const { mutateAsync: createBook } = useCreate({

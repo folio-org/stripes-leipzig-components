@@ -22,6 +22,7 @@ Name | type | description | default | required
 `api` | string | Base API endpoint. | - | true
 `params` | object | URL search parameters (query string parameters). | - | false
 `options` | object | Additional useQuery options. | - | false
+`errorHandling` | boolean | 	Enables or disables automatic error handling. When enabled, an error callout is displayed if the query fails. | true | false
 
 
 ## Return Value
@@ -48,6 +49,7 @@ For more see [useQuery documentation](https://tanstack.com/query/v3/docs/react/r
     queryKey: ['books', bookId],
     id: bookId,
     api: 'books',
+    errorHandling: false,
   });
 
   if (isLoadingBook) return <div>Loading...</div>;

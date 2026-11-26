@@ -1,4 +1,6 @@
 {
+  "editCard.delete.card": "Delete card",
+
   "monthpicker.errors.required": "Required",
   "monthpicker.errors.dateInvalid": "Date invalid",
   "monthpicker.monthSelection": "Month selection",
@@ -10,5 +12,6 @@
   "repeatableTextField.validateRequired": "Required!",
   "repeatableTextField.buttonAdd": "+ Add",
 
-  "editCard.delete.card": "Delete card"
+  "showErrorInfo.error": "Error",
+  "showErrorInfo.errorHasOcurred": "An error has occurred."
 }
