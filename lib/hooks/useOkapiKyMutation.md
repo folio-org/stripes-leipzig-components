@@ -29,7 +29,7 @@ Name | type | description | default | required
 `api` | string | Base API endpoint.  | - | true
 `options` | object | Additional useMutation options. | - | false
 `errorHandling` | boolean | 	Enables or disables automatic error handling. When enabled, an error callout is displayed if the query fails. | true | false
-`invalidateQueryKey` | string, array | Query key to invalidate after a successful mutation. Queries with this key are invalidated, and active queries are automatically refetched. | - | false
+`autoRefresh` | boolean | Whether to invalidate queries matching the mutation key after a successful mutation. Active matching queries are automatically refetched. | true | false
 
 ## Return Value
 
