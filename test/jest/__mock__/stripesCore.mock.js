@@ -74,6 +74,8 @@ jest.mock('@folio/stripes/core', () => {
 
     useOkapiKy: jest.fn(),
 
+    useModuleInfo: jest.fn(),
+
     useNamespace: jest.fn().mockReturnValue(['module-namespace']),
 
     useStripes: jest.fn(() => STRIPES),
