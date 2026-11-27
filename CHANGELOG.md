@@ -7,6 +7,7 @@
 * Add type declaration for DynamicSelectionFilterAccordion and CheckboxFilterAccordion ([UIFC-508](https://folio-org.atlassian.net/browse/UIFC-508))
 * useCreate: return null instead of failing for responses without body ([UIFC-511](https://folio-org.atlassian.net/browse/UIFC-511))
 * useOkapiKyMutation: allow DELETE without id and pass additional ky options ([UIFC-512](https://folio-org.atlassian.net/browse/UIFC-512))
+* **BREAKING** useOkapiKyQuery and useOkapiKyMutation: automatically handle errors, namespace query keys by API and refresh resource queries after successful mutations by default ([UIFC-517](https://folio-org.atlassian.net/browse/UIFC-517))
 
 ## [1.0.0](https://github.com/folio-org/stripes-leipzig-components/tree/v1.0.0) (2026-04-15)
 * Add basic files and structure
